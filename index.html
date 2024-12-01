@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=""UTF-8"">
+        <meta http-equiv="X-UA-Compatible" content="IE=edges"/>
+        <meta name="viewport" content="widtg=device-width,initial-scale=1.0"/>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Shasmitha</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Shasmitha</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>  
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>     
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="assets/profile.jpg" >
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello,I'm</p>
+                <h1 class="title">Shasmitha</h1>
+                <p class="section__text__p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" 
+                    onclick="window.open('./assets/resume-example.pdf')"
+                    >Download CV</button>
+                    <button 
+                    class="btn btn-color-1"
+                    onclick="locaton.href='./#contact'">
+                    Contact Info
+                    
+                </button>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <h3>Education</h3>
+            <p>B.E.Computer Science</p>
+            <div class="text-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos at impedit quam rerum, et 
+                   excepturi animi voluptatibus consectetur minus ab asperiores iure, eius, labore dolorum ipsum quis quia voluptates numquam. 
+                   Inventore quis aliquam, at vel omnis optio ipsum distinctio ipsam ab nisi enim, adipisci magnam molestiae animi ratione natus.
+                   A front-end developer builds the front-end portion of websites and web applications—the part users see and interact with.
+                   A front-end developer creates websites and applications using web languages such as 
+                   HTML, CSS, and JavaScript that allow users to access and interact with the site or app.</p>
+            </div>
+        </section>
+        <section id="experience">
+            <h1 class="title">Experience</h1>
+            <div class="text-container">
+                <p>A front-end developer builds the front-end portion of websites and web applications—the part users see and interact with. 
+                    A front-end developer creates websites and applications using web languages such as
+                     HTML, CSS, and JavaScript that allow users to access and interact with the site or app.</p>
+            </div>
+             
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <h3>Email :  shasmitha@gmail.com</h3>
+            <div class="contact-info-upper-container">
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
